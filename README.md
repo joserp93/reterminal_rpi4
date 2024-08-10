@@ -10,7 +10,7 @@ weston and cog (webkitwpe):
 
 We had the most success when compiling in the following order
 
-* host-libyaml (needed for host-ruby which in turn is used the compile serveral packages)
+* host-libyaml (needed for host-ruby which in turn is used the compile serveral packages) https://gitlab.com/buildroot.org/buildroot/-/commit/95093854e4c6ce69ee54df17fce20417312a3d0a
 * libsoup3 (for TLS support in cog)
 * the rest 
 
@@ -22,7 +22,7 @@ Webkitwpe is large and compilation is slow. In case it fails with a memory error
 make <pgk>-reconfigure
 ```
 
-## reTermial DM
+## reTermial 
 
 The DSI-Display will not start by itself. This might be fixed later. Forcing modprobe to re-enable/reststart works though. For now pin 13 (backlight) is pulled up (full brightness) via dtoverlay in config.txt. The brightness might be changed using hardware PWM if the overlay is disabled.
 
