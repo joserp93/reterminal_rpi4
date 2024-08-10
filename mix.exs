@@ -42,7 +42,7 @@ defmodule NervesSystemEffioReTerminalRpi4.MixProject do
     [
       type: :system,
       artifact_sites: [
-        {:prefix, "https://effio-io/reterminal_rpi4/"}
+        {:github_releases, "#{@github_organization}/#{@app}"}
       ],
       build_runner_opts: build_runner_opts(),
       platform: Nerves.System.BR,
