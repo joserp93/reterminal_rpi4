@@ -1,8 +1,8 @@
-defmodule NervesSystemRpi4.MixProject do
+defmodule NervesSystemEffioReTerminalRpi4.MixProject do
   use Mix.Project
 
-  @github_organization "formrausch"
-  @app :frio_rpi4
+  @github_organization "effio"
+  @app :retermial_rpi4
   @source_url "https://github.com/#{@github_organization}/#{@app}"
   @version Path.join(__DIR__, "VERSION")
            |> File.read!()
@@ -42,7 +42,7 @@ defmodule NervesSystemRpi4.MixProject do
     [
       type: :system,
       artifact_sites: [
-        {:prefix, "https://fra1.digitaloceanspaces.com/formrausch-io/frio_rpi4/"}
+        {:prefix, "https://effio-io/reterminal_rpi4/"}
       ],
       build_runner_opts: build_runner_opts(),
       platform: Nerves.System.BR,
@@ -75,7 +75,7 @@ defmodule NervesSystemRpi4.MixProject do
   end
 
   defp description do
-    "Formrausch.io Nerves System - Raspberry Pi 4 (64-bits)"
+    "Effio.io Nerves System reTerminal- Raspberry Pi 4 (64-bits)"
   end
 
   defp docs do

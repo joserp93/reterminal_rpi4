@@ -44,4 +44,4 @@ dtparam=i2c1=on
 dtparam=i2c1=on
 dtparam=i2c3=on
 gpio=13=pu
-dtoverlay=reTerminal-plus,tp_rotate=1
+dtoverlay=reTerminal,tp_rotate=1
