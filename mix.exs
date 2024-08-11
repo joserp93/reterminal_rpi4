@@ -12,7 +12,8 @@ defmodule NervesSystemEffioReTerminalRpi4.MixProject do
     [
       app: @app,
       version: @version,
-      elixir: "~> 1.6",
+      # Because we're using OTP 27, we need to enforce Elixir 1.17 or later.
+      elixir: "~> 1.17",
       compilers: Mix.compilers() ++ [:nerves_package],
       nerves_package: nerves_package(),
       description: description(),
@@ -82,7 +83,7 @@ defmodule NervesSystemEffioReTerminalRpi4.MixProject do
     [
       extras: ["README.md", "CHANGELOG.md"],
       main: "readme",
-      assets: "assets",
+      assets: %{"assets" => "./assets"},
       source_ref: "v#{@version}",
       source_url: @source_url,
       skip_undefined_reference_warnings_on: ["CHANGELOG.md"]
@@ -107,7 +108,7 @@ defmodule NervesSystemEffioReTerminalRpi4.MixProject do
       "fwup-ops.conf",
       "fwup.conf",
       "LICENSE",
-      "linux-6.1.defconfig",
+      "linux-6.6.defconfig",
       "mix.exs",
       "nerves_defconfig",
       "post-build.sh",
