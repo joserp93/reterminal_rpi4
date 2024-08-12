@@ -108,7 +108,7 @@ defmodule NervesSystemEffioReTerminalRpi4.MixProject do
       "fwup-ops.conf",
       "fwup.conf",
       "LICENSE",
-      "linux-6.6.defconfig",
+      "linux-6.1.defconfig",
       "mix.exs",
       "nerves_defconfig",
       "post-build.sh",
