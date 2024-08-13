@@ -1,3 +1,4 @@
+#
 # Zhangqun Ming <north_sea@qq.com>
 # Copyright (c) 2021 Seeed Studio
 #
@@ -5,9 +6,8 @@
 #
 KVERSION ?= $(shell uname -r)
 
-obj-m = ili9881d.o
-
-ili9881d: all
+obj-m := bq24179_charger.o
+bq24179_charger-objs := bq25790_charger.o         
 
 all:
 	$(MAKE) -C /lib/modules/$(KVERSION)/build M=$(PWD) modules
@@ -17,3 +17,4 @@ install:
 
 clean:
 	$(MAKE) -C /lib/modules/$(KVERSION)/build M=$(PWD) clean
+

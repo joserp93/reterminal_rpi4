@@ -1,0 +1,9 @@
+config BR2_PACKAGE_BQ24179_CHARGER
+	bool "bq24179_charger"
+	help
+	  bq24179_charger
+
+          https://github.com/Seeed-Studio/seeed-linux-dtoverlays
+
+comment "bq24179_charger needs a Linux kernel to be built"
+	depends on !BR2_LINUX_KERNEL
