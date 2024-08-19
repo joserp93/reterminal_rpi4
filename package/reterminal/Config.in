@@ -1,4 +1,4 @@
-menuconfig BR2_PACKAGE_RETERMINAL_DM
+menuconfig BR2_PACKAGE_RETERMINAL
 	bool "reterminal-dm"
 	select BR2_PACKAGE_HOST_DTC
 	help
