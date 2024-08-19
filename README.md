@@ -1,4 +1,4 @@
-# reTerminal DM / Raspberry Pi CM4 (64-bit)
+# reTerminal / Raspberry Pi CM4 (64-bit)
 
 ## How to build 
 
