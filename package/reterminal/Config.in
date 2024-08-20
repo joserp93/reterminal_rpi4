@@ -1,5 +1,0 @@
-menuconfig BR2_PACKAGE_RETERMINAL
-	bool "reterminal"
-	select BR2_PACKAGE_HOST_DTC
-	help
-	  Reterminal DTS files that may be useful on Nerves systems.
